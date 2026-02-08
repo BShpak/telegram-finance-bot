@@ -1,3 +1,4 @@
+import os
 from telegram import Update, ReplyKeyboardMarkup, KeyboardButton
 from telegram.ext import (
     ApplicationBuilder,
@@ -8,7 +9,7 @@ from telegram.ext import (
 )
 from datetime import datetime, timedelta
 
-BOT_TOKEN = "8479393093:AAFvm_uJUE6wiECkWnaMjD2DU7iFP5xFGlk"
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 DATA_FILE = "finance.txt"
 
 # ===== КАТЕГОРИИ И ПОДКАТЕГОРИИ =====
